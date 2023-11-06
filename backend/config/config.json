@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "guilhermemartins",
+    "password": "123456",
+    "database": "guilhermemartins",
+    "host": "200.19.1.18",
+    "dialect": "postgres",
+    "port": "5432"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "guilhermemartins",
+    "password": "123456",
+    "database": "guilhermemartins",
+    "host": "192.168.20.18",
+    "dialect": "postgres",
+    "port": "5432"
+  }
+}
