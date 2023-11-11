@@ -12,8 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "node": "^21.1.0",
     "pg": "^8.11.3",
     "sequelize": "^6.34.0",
+    "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {

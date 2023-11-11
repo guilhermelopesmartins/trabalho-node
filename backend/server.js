@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
-const carroController = require("./controller/carroController");
+//const carroController = require("./controller/carroController");
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./swaggerConfig'); 
+const carrosController = require('./controllers/carrosController')
 
 //MIDDLEWARE
 app.use((req, res, next) => {
@@ -11,6 +12,8 @@ app.use((req, res, next) => {
     next();
   })
 app.use(express.json())
+
+app.use('/carro', carrosController);
 
 // Serve Swagger UI
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
